@@ -40,6 +40,33 @@ console.log(marks === marks2)
  //  ->
 
 
+ //--------------------------------------------------------------------------------------------------------
+ //Memory allocation in javascript
+ /* There are two ways to store memory in js
+  1.stack -all Primittive types are stored in stack .and we get a copy of the data while performing operations on it */
+  let myYoutubeName ="hiteshcodes.com";
+  let anotherName =myYoutubeName;
+  anotherName ="chaiaurcode";
+  console.log(myYoutubeName);
+  console.log(anotherName);
+
+  
+//2.Heap -All non primittive data stored in heap memory .It references to the same reference no copy provided.
+
+let userOne ={
+  email:"test@gmail.com",
+  city:"Bengaluru"
+}
+
+let userTwo =userOne;
+userTwo.email="develop@gmai.com"
+console.log(userOne);
+console.log(userTwo);
+
+
+   
+
+
 
 
 
